@@ -1,0 +1,18 @@
+.gallery{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.row3{
+  width:80%; /*the size you want*/
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5px; /*Adjust it how you want*/
+}
+
+.col1{
+  width:30%;
+  vertical-align: medium;
+  margin:2px;
+}
