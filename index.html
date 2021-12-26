@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quang-Huy Nguyễn</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/fa.min.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/github.css" rel="stylesheet">
+
+    <meta name="gc:base" content="http://lab.lepture.com/github-cards/">
+    <meta name="gc:theme" content="medium">
+    <meta name="gc:client-id" content="client id string">
+    <meta name="gc:client-secret" content="client secret string">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21475122-5']);
+      _gaq.push(['_setCustomVar', 1, 'Repo', 'lepture/github-cards']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        if (location.port || !/^http/.test(location.protocol)) {
+          return;
+        }
+        ga.src = '//www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <style>
+    a{
+        color: purple;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    p {
+        font-size: 16px;
+        margin: 4px;
+    }
+    ul.research {
+        list-style:none;
+        padding-left:0;
+        padding-top:20px;
+    }
+    ul.news {
+        font-size: 15px;
+    }
+    ul.research li {
+        padding-bottom: 20px;
+    }
+    div.thumb {
+        float:left;
+        padding-right:20px;
+        width: 144px;
+    }
+    div.thumb > img {
+        width: 100%;
+    }
+    div.details{
+        float:left;
+    }
+    div.clear{
+        clear:left;
+    }
+    p.title {
+        font-size: 16px;
+        color: #536872;
+        font-weight: bold;
+    }
+    p.author {
+        font-size: 14px;
+        color: #505050;
+    }
+    p.date {
+        font-size: 13px;
+        color: #505050;
+        font-style: italic;
+    }
+    p.description {
+        font-size: 12px;
+        color: #505050;
+        font-style: italic;
+    }
+    p.venue {
+        font-size: 14px;
+        color: #505050;
+    }
+    p.material {
+        font-size: 14px;
+        color: #505050;
+    }
+    span.icon {
+        width: 25px;
+    }
+    </style>
+    <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+    </script>
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:110%">
+  </div>
+</div>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <!-- When view is too narrow (mobile mode), navigation will collapse -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#about"><b>About</b></a>
+                    </li>
+		            <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#news"><b>News</b></a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#research"><b>Publications</b></a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#project"><b>Feature Projects</b></a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#courses"><b>Relevant Courses</b></a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="page-scroll" style="font-size:16px" href="#hobbies"><b>Hobbies</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <h3>Quang-Huy Nguyen</h3>
+                    <p>Research Assistant at UIT, VNU-HCM, Vietnam</p>
+                    <!-- <p><i>Research Assistant in <a href="" target="_blank">VinUni-Illinois Smart Health Center (VishC), VinUniversity, Vietnam</a></i></p> -->
+
+                    <p style="font-size:11px"> <i> To avoid any confusion, my first name is Huy but I prefer mention my name as <b>Quang-Huy</b> (as there are so many people who share my first name in Vietnam). You can call me Huy for short if you like. </i></p>
+                </div>
+
+                <div class="col-lg-8">
+                    <div style="float:left">
+
+                    <br>
+
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fas fa-envelope"></i></span>
+                        <a target="_blank" href="mailto:quanghuy0497@gmail.com" >quanghuy0497@gmail.com</a>
+                    </p>
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fas fa-graduation-cap"></i></span>
+                        <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=SLjuGgIAAAAJ">Google Scholar</a>
+                    </p>
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fab fa-github"></i></span>
+                        <a target="_blank" href="https://github.com/quanghuy0497">quanghuy0497</a>
+                    </p>
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fab fa-linkedin-in"></i></span>
+                        <a target="_blank" href="https://www.linkedin.com/in/quanghuy0497/">quanghuy0497</a>
+                    </p>
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fab fa-twitter"></i></span>
+                        <a target="_blank" href="https://twitter.com/quanghuy0497">quanghuy0497</a>
+                    </p>
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fab fa-instagram"></i></span>
+                        <a target="_blank" href="https://www.instagram.com/quanghuy0497/">quanghuy0497</a>
+                    </p>
+
+                    <p class="text-info">
+                        <span class="glyphicon icon"><i class="fas fa-file"></i></span>
+                        <a target="_blank" href="pdf/CV_Quang_Huy_Nov142021.pdf">Curriculum Vitae</a>
+                    </p>
+
+                    </div>
+                    <div style="float:right">
+
+                    <img src="Images/personal-id.jpg" class="img-thumbnail img-fluid" width="180" style="vertical-align:bottom"></img>
+
+                    </div>
+                    <div style="clear:left"></div>
+    
+                    
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            <div class="col-lg-10">
+                <p>
+                    I am an upcoming research assistant at VinUni-Illinois Smart Health Center, VinUniversity. Before that, I worked as a post-baccalaureate research assistant at <a target="_blank" href="https://en.uit.edu.vn/">University of Information Technology (UIT)</a> Vietnam National University Ho Chi Minh City (VNU-HCM) under the supervision and guidance of Professor <a target="_blank" href="https://sites.google.com/a/uit.edu.vn/lungvd/">Duc-Lung Vu</a> from July, 2019 to December, 2021.
+                    I obtained my Bachelor degree in Computer Engineering at UIT, VNU-HCM in December 2020. <!-- and I am looking for a Ph.D. candidate position in Computer Science starting Fall 2022. -->
+                </p>
+                    
+                <br>
+                <p>
+                    I have a great interested in Computer Vision with a broad interest in object detection/segmentation algorithms, multi-modal learning, few-shot learning, and Vision Transformer.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>News</h3>
+                        <ul class = "news">
+                             <li> <b>Jan, 2022</b>: I start a new role as a short-term research assistant at <b>VinUni-Illinois Smart Health Center, VinUniversity</b>. <b style="color:red;">Congratulations!</b></li>
+                             <li> <b>Dec, 2021</b>: Our paper is accepted at the Indonesian Journal of Electrical Engineering and Computer Science (IJEECS)</li>
+                             <li> <b>Oct, 2021</b>: Our paper is accepted at the International Journal of Intelligent Engineering and Systems (IJIES)</li>
+                             <li> <b>May, 2021</b>: Our paper is accepted at the Journal of Advanced Computer Science and Applications (IJACSA)</li>
+                             <li> <b>Dec, 2020</b>: I graduate bachelor degree at the <b>University of Information Technology, VNU-HCM</b>. <b style="color:red;">Congratulations!</b></li>
+                             <li> <b>Sep, 2020</b>: Our paper is accepted at the FDSE-2020 international conference</li>
+                             <li> <b>Jan, 2020</b>: Our paper is accepted at the RIVF-2020 international conference</li>
+                             <li> <b>Jul, 2019</b>: I become a research assistant at <b>University of Information Technology, VNU-HCM</b></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h3>Publications</h3>
+
+                    <ul class="research">
+                        <li>
+                        <div class="thumb"><img src="Images/Paper/joint.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                        <div class="details">
+                        <p class="title"> <a href = "">Joint inter-intra representation learning for pornographic video classification</a></p>
+                        <p class="author">Dinh-Duy Phan, <b>Quang-Huy Nguyen</b>, Thanh-Thien Nguyen, Hoang-Loc Tran, and Duc-Lung Vu</p>
+                        <p class="venue">Indonesian Journal of Electrical Engineering and Computer Science (IJEECS)</p>
+                        <p class="material">
+                            <a target="_blank" href="/pdf/joint_IJEECS.pdf" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;pdf</a>
+                        </p>
+                        </div>
+                        <div class="clear"></div>
+                        </li> 
+
+                        <li>
+                        <div class="thumb"><img src="Images/Paper/lspd.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                        <div class="details">
+                        <p class="title"> <a href = "">LSPD: A Large-Scale Pornographic Dataset for Detection and Classification</a></p>
+                        <p class="author">Dinh-Duy Phan, Thanh-Thien Nguyen, <b>Quang-Huy Nguyen</b>, Hoang-Loc Tran, Khac-Ngoc-Khoi Nguyen, and Duc-Lung Vu</p>
+                        <p class="venue">International Journal of Intelligent Engineering and Systems (IJIES)</p>
+                        <p class="material">
+                            <a target="_blank" href="http://uit.edu.vn/~LSPD" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;Project page</a>
+                            <a target="_blank" href="/pdf/LSPD_IJIES.pdf" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;pdf</a>
+                        </p>
+                        </div>
+                        <div class="clear"></div>
+                        </li> 
+
+                        <li>
+                        <div class="thumb"><img src="Images/Paper/10porn.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                        <div class="details">
+                        <p class="title"> <a href = "https://thesai.org/Publications/ViewPaper?Volume=12&Issue=5&Code=IJACSA&SerialNo=91">A Novel Pornographic Visual Content Classifier based on Sensitive Object Detection</a></p>
+                        <p class="author">Dinh-Duy Phan, Thanh-Thien Nguyen, <b>Quang-Huy Nguyen</b>, Hoang-Loc Tran, Khac-Ngoc-Khoi Nguyen, and Duc-Lung Vu</p>
+                        <p class="venue">Journal of Advanced Computer Science and Applications (IJACSA)</p>
+                        <p class="material">
+                            <a target="_blank" href="/pdf/novelporn_IJACSA.pdf" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;pdf</a>
+                        </p>
+                        </div>
+                        <div class="clear"></div>
+                        </li>   
+
+                        <li>
+                        <div class="thumb"><img src="Images/Paper/additional.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                        <div class="details">
+                        <p class="title"> <a href ="https://link.springer.com/chapter/10.1007/978-981-33-4370-2_22">Additional Learning on Object Detection: A Novel Approach in Pornography Classification</a></p>
+                        <p class="author">Hoang-Loc Tran, <b>Quang-Huy Nguyen</b>, Dinh-Duy Phan, Thanh-Thien Nguyen, Khac-Ngoc-Khoi Nguyen, and Duc-Lung Vu</p>
+                        <p class="venue">FDSE 2020: International Conference on Future Data and Security Engineering</p>
+                        <p class="material">
+                            <a target="_blank" href="/pdf/additional-fdse2020.pdf" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;pdf</a>
+                        </p>
+                        </div>
+                        <div class="clear"></div>
+                        </li>   
+
+                        <li>
+                        <div class="thumb"><img src="Images/Paper/multilevel.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                        <div class="details">
+                        <p class="title"><a href= "https://ieeexplore.ieee.org/document/9140734">Multi-level detector for pornographic content using CNN models</a></p>
+                        <p class="author"><b>Quang-Huy Nguyen</b>, Khac-Ngoc-Khoi Nguyen, Hoang-Loc Tran, Thanh-Thien Nguyen, Dinh-Duy Phan, and Duc-Lung Vu</p>
+                        <p class="venue">2020 RIVF International Conference on Computing and Communication Technologies</p>
+                        <p class="material">
+                            <a target="_blank" href="/pdf/multi-rivf2020.pdf" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;pdf</a>
+                        </p>
+                        </div>
+                        <div class="clear"></div>
+                        </li>                
+                 </ul>
+        </div> 
+    </div>
+    
+        </div> <!-- end container -->
+    </section> 
+
+    <!-- Honors Section -->
+    <section id="project" class="project-section">
+        <!-- https://github.com/lepture/github-cards -->
+        <!-- -->
+        <!-- <div style="float:left; margin-bottom:.5cm">
+                        <div class="github-card" data-github="quanghuy0497/Transformer4Vision"
+                        data-width="415" data-height="" data-theme="default">
+                        </div>
+                        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                        <br>
+                    </div>
+                    <div style="float:right; margin-bottom:.5cm">
+                        <div class="github-card" data-github="quanghuy0497/Mask_R-CNN" 
+                         data-width="415" data-height="" data-theme="default">
+                        </div>
+                        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                        <br>
+                    </div>
+                </div> -->
+        <!-- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Feature Projects</h3>
+                    <ul class="research">
+                    
+                <ul class="research">
+                <li>
+                    <div class="thumb"><img src="Images/Project/vit.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                    <div class="details">
+                        <p class="title"> <a target="_blank" href="https://github.com/quanghuy0497/Transformer4Vision"> Transformer4Vision</a></p>
+                        <p class="date">2021 </p>
+                        <p class="description"> A summarization of Transformer-based architectures for CV tasks, including image classification, object detection, segmentation, and Few-shot Learning.</p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="Images/Project/mask_rcnn.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                    <div class="details">
+                        <p class="title"><a target="_blank" href="https://github.com/quanghuy0497/Mask_R-CNN"> Mask R-CNN</a></p>
+                        <p class="date">2020 </p>
+                        <p class="description">A modified version of Mask R-CNN based on Matterport's version. Featuring: polygon annotating mask generation and k-fold cross-validation training.</p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="Images/Project/facial_skin.png" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                    <div class="details">
+                        <p class="title"> <a target="_blank" href="https://github.com/quanghuy0497/Face-Skin-Detection"> Face Skin Detection</a></p>
+                        <p class="date">2019 </p>
+                        <p class="description">A simple facial landmark detection using HoG-CNN (via dlib) and Skin detection with HSV-YCbCr colorspace.</p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="Images/Project/cp.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                    <div class="details">
+                        <p class="title"> <a target="_blank" href= "https://github.com/quanghuy0497/Competitive-Programing"> Competitive Programming</a></p>
+                        <p class="date">2018 </p>
+                        <p class="description">My old competitive programming codes by C++. Problems selected from Codeforces, SPOJ, UVA,...</p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Relevant Courses</h3>
+                    <ul class="research">
+
+                        <li>
+                            <div class="thumb"><img src="Images/Certificate/dl.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                            <div class="details">
+                            <p class="title"><a href= "https://www.coursera.org/account/accomplishments/specialization/E9JNL2K42KUW">Deep Learning Specialization - DeepLearning.AI</a></p>
+                            <p class="author"><b>Instructor</b>: Prof. Andrew Ng</p>
+                            <p class="date">August 20th, 2021 </p>
+                            <p class="description">A series of courses that cover Deep Learning knowledge in a comprehensive way. From building shallow neural networks to developing deep models for CV/NLP tasks.</p>
+                            <p class="material">
+                                <a target="_blank" href="https://github.com/quanghuy0497/Deep-Learning-Specialization" role="button" class="btn btn-sm btn-default"><span class="glyphicon icon"><i class="fab fa-github"></i></span>Notes</a>
+                            </p>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <div class="thumb"><img src="Images/Certificate/wt.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                            <div class="details">
+                            <p class="title"><a href= "https://www.coursera.org/account/accomplishments/verify/5VF2XZ6322PQ">Writing in the Sciences - Stanford University</a></p>
+                            <p class="author"><b>Instructor</b>: Prof. Kristin Sainani</p>
+                            <p class="date">July 29th, 2021 </p>
+                            <p class="description">A Stanford writing course to learn how to write scientific articles in a clear, concise, and effective way. Certificate with <b>honor</b>.</p>
+                            <p class="material">
+                                <a target="_blank" href="https://github.com/quanghuy0497/Writing-in-the-Sciences" role="button" class="btn btn-sm btn-default"><span class="glyphicon icon"><i class="fab fa-github"></i></span>Notes</a>
+                            </p>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <div class="thumb"><img src="Images/Certificate/ml.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity"></img></div>
+                            <div class="details">
+                            <p class="title"><a href= "https://www.coursera.org/account/accomplishments/verify/TSEK4R7ZQBRZ">Machine Learning - Cousera</a></p>
+                            <p class="author"><b>Instructor</b>: Prof. Andrew Ng</p>
+                            <p class="date">June 18th, 2021 </p>
+                            <p class="description">A famous Coursera course that introduces Machine Learning algorithms on Matlab/Octave.</p>
+                            <p class="material">
+                                <a target="_blank" href="https://github.com/quanghuy0497/Machine-Learning-Coursera" role="button" class="btn btn-sm btn-default"><span class="glyphicon icon"><i class="fab fa-github"></i></span>Notes</a>
+                            </p>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Hobbies</h3>
+                    <p>
+                        My lifelong hobby is photography. I love hanging around and taking photos with my smartphone (Redmi Note 10 pro) in my leisure time.
+                        My favourite genre are astrophotography, macro photography, and street life.
+                        You can check my <a target="_blank" href="https://www.instagram.com/quanghuy0497/">Instagram</a> for my lastest creations.
+                    </p>
+                    <br>
+                    <p>
+                        I also love reading books, especially Sci-fi/Fantasy such as Dune, The Three-body Problem, A Song of Ice and Fire, The Lord of the Rings. I quite enjoy watching their movie/tv-series adaptations when I'm free. I read The Godfather every year.
+                    </p>
+                    <br>
+                    <p>
+                        I love purple, instrumental music, and writing (but not too good at expressing myself). <a target="_blank" href="https://hiepsibaotap.com/author/quanghuynguyen/">Here</a> is a Vietnamese gaming-history blog that I used to write a long time ago.
+                    </p>
+                    <br>
+                    <p>
+                        Here are some of my exemplary photos:
+                    </p>
+                    <br>
+                </div>
+                <div class="gallery">
+                    <div class="row3">
+                        <img class="col1" src="Images/Photo/4.png" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/5.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/6.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="row3">
+                        <img class="col1" src="Images/Photo/1.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/2.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/3.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="row3">
+                        <img class="col1" src="Images/Photo/10.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/11.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/12.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="row3">
+                        <img class="col1" src="Images/Photo/7.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/8.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/9.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="row3">
+                        <img class="col1" src="Images/Photo/13.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/14.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                        <img class="col1" src="Images/Photo/15.jpg" style="cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <h4>Favorite quote:</h4>
+            <br>
+            <br>
+                <p style="color:green; font-size:14px" class="text-center">
+                    <b><i>“Do or do not. There is no try.”<i></b> 
+                </p>
+                <p style="font-size:13px;" class="text-center">
+                    <span style="padding-left:100px"><b>Yoda</b>. <cite>The Empire Strikes Back.</cite> 1980 </span>
+                </p>
+                <br>
+                <br>
+                <br>
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="text-right" style="font-size:12px;"> <i>Last update: December 26th, 2021 </i></p>
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <!-- GitHub Card JavaScript -->
+    <script src="js/github.js"></script>
+    <script src="js/widget.js"></script>
+</body>
+
+</html>
