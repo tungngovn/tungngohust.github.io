@@ -1,3 +1,3 @@
 ### About
 
-This is my personal academic webpage:
+This is my personal academic webpage.
