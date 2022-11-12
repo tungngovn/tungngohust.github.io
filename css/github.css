@@ -75,7 +75,8 @@ html, body {
 }
 .howto textarea {
   font-size: 16px;
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
   height: 80px;
 }
 .howto input:focus, .howto textarea:focus {
